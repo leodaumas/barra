@@ -10,8 +10,8 @@ body {
 .barra {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 2000px;
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
@@ -19,20 +19,21 @@ body {
 }
 
 .barra .dia {
+    position: relative;
     flex: 1 0 3%;
-    margin: 2px;
+    /* margin: 2px 0; */
     height: 30px;
     background-color: #4caf50;
     text-align: center;
     color: white;
     line-height: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
+    /* border-radius: 5px; */
+    /* border: 1px solid black; */
 }
 
-.barra .dia:nth-child(odd) {
+/* .barra .dia:nth-child(odd) {
     background-color: #8bc34a;
-}
+} */
 
 .barra .dia.azul {
     background-color: blue;
@@ -40,6 +41,14 @@ body {
 
 .barra .dia.vermelho {
     background-color: red;
+}
+
+.seta {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
 }
 
 @media (max-width: 768px) {
