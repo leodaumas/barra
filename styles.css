@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.barra .dia {
+    flex: 1 0 3%;
+    margin: 2px;
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.barra .dia:nth-child(odd) {
+    background-color: #8bc34a;
+}
+
+.barra .dia.azul {
+    background-color: blue;
+}
+
+.barra .dia.vermelho {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .barra .dia {
+        flex: 1 0 7%;
+    }
+}
+
+@media (max-width: 480px) {
+    .barra .dia {
+        flex: 1 0 15%;
+    }
+}
